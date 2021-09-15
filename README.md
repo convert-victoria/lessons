@@ -1,6 +1,4 @@
 # Lessons
 Basic lessons in markup and styling
 
-123
-
-4556
+1. HTML and basic tags
