@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>My first-child</title>
 	<style>
@@ -29,6 +29,17 @@
  			width: 60vw;
  			margin-left: -30px;
  		}
+ 		li {
+ 			margin-bottom: 20px;
+ 		}
+ 		label {
+ 			padding: 0 10px;
+ 		}
+ 		.first {
+ 			float: left;
+ 			text-align: right;
+ 		}
+ 		form 
 	</style>
 </head>
 <body>
@@ -44,21 +55,21 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>1</td>
+				<th>1</th>
 				<td>12345</td>
 				<td>12345</td>
 				<td>12345</td>
 				<td>12345</td>
 			</tr>
 			<tr>
-				<td>2</td>
+				<th>2</th>
 				<td>12345</td>
 				<td>12345</td>
 				<td>12345</td>
 				<td>12345</td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<th>3</th>
 				<td>12345</td>
 				<td>12345</td>
 				<td>12345</td>
@@ -67,7 +78,7 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<td colspan="4">Итого</td>
+				<th colspan="4" style="padding-left: 15px;" align="left">Итого</th>
 				<td>15</td>
 			</tr>
 		</tfoot>
@@ -75,29 +86,73 @@
 	</section>
 	<section>
 		<h2 style="text-align: center;">Smart form not you</h2>
-	<form action="mailto:luibov@convert.no" enctype="text/plain" autocomplete="on">
-		<ol>
-		<fieldset>
-			<legend>Contact</legend>
+	<form action="mailto:luibov@convert.no" enctype="text/plain" autocomplete="on" method="post">
+		<ul>
+		<fieldset style="background-color: beige;" >
+			<legend style="background-color: white; padding: 0 5px 1px">CONTACT</legend>
+			<div class="first">
 			<li>
-				<label for="text">Full name</label>
-				<input type="text" placeholder="Name" id="text">
+				<label for="text"; style="float: left;">Full name</label>
+				<input type="text" placeholder="Name" id="text" required="1">
 			</li>
 			<li>
-				<label for="Phone">Phone number</label>
-				<input type="phone" placeholder="Phone number" id="Phone">
+				<label for="Phone"; style="float: left;">Phone number</label>
+				<input type="tel" placeholder="Phone number" id="Phone">
 			</li>
+			</div>
 		</fieldset>
+		<br>
+		<fieldset style="background-color: lightsteelblue; position: relative;">
+			<p style="position:absolute; top: -25px; right: 30px; background-color: white; padding: 0 5px 1px;">TEST</p>
 			<li>
-				
+				<label>Choose suitable:</label>
+				<br>
+				<label for="check1">he</label>
+				<input type="checkbox" id="check1">
+				<label for="check2">she</label>
+				<input type="checkbox" id="check2">
+				<label for="check3">it</label>
+				<input type="checkbox" id="check3">
 			</li>
 			<li>
-				
+				<label>Choose one:</label>
+				<br>
+				<label for="rad1">12</label>
+				<input type="radio" name="rad1">
+				<label for="rad2">60</label>
+				<input type="radio" name="rad1">
 			</li>
 			<li>
-				
+				<label>Choose text</label>
+				<select>
+					<optgroup label="Something">
+						<option>la</option>
+					<option>la co</option>
+					<optgroup label="everything">	
+						<option>opium</option>
+					</optgroup>
+				</select>
 			</li>
-		</ol>
+			<li>
+				<label for="age">Age</label>
+				<input type="number" id="age" max="35" min="18" step="1">
+			</li>
+			<li>
+				<label for="textt">Something else</label>
+				<br>
+				<textarea id="textt" style="height: 5em; width: 25em;"></textarea>
+			</li>
+			<li>
+				<input type="file" id="pdf" accept=".pdf">
+			</li>
+			<li>
+				<label for="password">Visa password</label>
+				<input type="password" id="password" placeholder="Password">
+			</li>
+			<input type="submit" value="Otpravliaiu" formmethod="post">
+			<input type="reset" value="Reset pls">
+		</fieldset>
+		</ul>
 	</form>
 	</section>
 </body>

@@ -6,27 +6,43 @@
 		p {
 			color: grey;
 		}
-
-		.lookatme {
-			font-size: 1.5em;
-		}
-
-		#text2 {
-			background-color: darkgreen;
-		}
 		.heading {
 			text-align: center;
 			color: darkgreen;
+		}
+		.box {
+			/*overflow: hidden;*/
+			float: right;
+		}
+		.clearfix:after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+		.kayer {
+			background-color: lightskyblue; 
+			float:right;
+			width: 40%;
+			padding: 20px;
+			border: 1px solid;
 		}
 	</style>
 </head>
 <body>
 	<h1 class="heading"> 1. A brief history of markup </h1>
-	<img src="img/maxresdefault.jpg" width="800
-" />
-	<p style="font-style:italic"> <strong>html is the unifying language of the World Wide Web.</strong> Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler. </p>
-	<p> HTML5 is the latest iteration of this lingua franca. While it is the most ambitious change to our common tongue, this isn’t the first time that HTML has been updated. The language has been evolving from the start. </p>
-	<p class="lookatme" style="color:orange;" id="text2"> As with the web itself, the HyperText Markup Language was the brainchild of Sir Tim Berners-Lee. In 1991 he wrote a document called <b>“HTML Tags”</b> in which he proposed fewer than two dozen elements that could be used for writing web pages. </p>
-	<p> Sir Tim didn’t come up with the idea of using tags consisting of words between angle brackets; those kinds of tags already existed in the SGML <small>(Standard Generalized Markup Language)</small> </p>
+	<div style="background-color: beige; margin-bottom: 30px;" class="box">
+		<img src="img/maxresdefault.jpg" height="400"; align="right" />
+		<div class="clearfix">
+			<p style="font-style:italic"> <strong>html is the unifying language of the World Wide Web.</strong> Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler. </p>
+			<p> HTML5 is the latest iteration of this lingua franca. While it is the most ambitious change to our common tongue, this isn’t the first time that HTML has been updated. The language has been evolving from the start. </p>
+			<p class="lookatme" style="color:orange;" id="text2"> As with the web itself, the HyperText Markup Language was the brainchild of Sir Tim Berners-Lee. In 1991 he wrote a document called <b>“HTML Tags”</b> in which he proposed fewer than two dozen elements that could be used for writing web pages. </p>
+			<p hidden> Sir Tim didn’t come up with the idea of using tags consisting of words between angle brackets; those kinds of tags already existed in the SGML <small>(Standard Generalized Markup Language)</small></p>
+		</div>
+		<!--<br style="clear: both; font-size:0em"></br>-->
+	</div>
+	<div>
+		<div class="kayer">Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler.Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler.Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like</div>
+		<div>Hitler.Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler.Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler.</div>
+	</div>
 </body>
 </html>
