@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <style media="screen">
       *, *:before, *:after {
@@ -37,16 +38,16 @@
         transform: rotate(45deg);
       }
       .parent {
-      /*  display: flex;
-        width: auto;*/
+        display: flex;
+        width: auto;
       }
       .parent img {
-      /*  max-width: 100%;*/
-        float: left;
-        width: 25%;
+        max-width: 100%;
+    /*    float: left;
+        width: 25%;*/
       }
       .parent img:first-of-type + img {
-        clear: left;
+      /*  clear: left;*/
       }
     </style>
   </head>
@@ -56,12 +57,11 @@
     <div class="corner2">
     </div>
     <div class="parent">
-      <img src="123.png" alt="">
-      <img src="123.png" alt="">
-      <img src="123.png" alt="">
-      <img src="123.png" alt="">
-      <img src="123.png" alt="">
-      <img src="123.png" alt="">
+      <div><img src="123.png" alt=""></div>
+      <div><img src="123.png" alt=""></div>
+      <div><img src="123.png" alt=""></div>
+      <div><img src="123.png" alt=""></div>
+      <div><img src="123.png" alt=""></div>
     </div>
   </body>
 </html>
