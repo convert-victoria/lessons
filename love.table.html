@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<title>My first-child</title>
 	<style>
@@ -31,6 +31,7 @@
  		}
  		li {
  			margin-bottom: 20px;
+ 			content: '\2662';
  		}
  		label {
  			padding: 0 10px;
@@ -39,6 +40,10 @@
  			float: left;
  			text-align: right;
  		}
+ 		::marker {
+ 			content: '\2666';
+ 		}
+
  		form 
 	</style>
 </head>
@@ -92,7 +97,7 @@
 			<legend style="background-color: white; padding: 0 5px 1px">CONTACT</legend>
 			<div class="first">
 			<li>
-				<label for="text"; style="float: left;">Full name</label>
+				<label for="text"; style="float: left;">&#9826; Full name</label>
 				<input type="text" placeholder="Name" id="text" required="1">
 			</li>
 			<li>
