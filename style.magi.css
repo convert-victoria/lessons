@@ -1,6 +1,7 @@
 body {
 		font-style: normal;
 		font-family: 'Roboto', sans-serif;
+		max-width: 1400px;
 		}
 		.page {
 			max-width:  80%;
@@ -39,13 +40,19 @@ body {
 		}
 		.item {
 			width: 25%;
-			float: left;
+			/*float: left;*/
 			padding: 15px 30px 0;
-			box-sizing: border-box;
-			/*flex: 1 1 auto;*/
+			/*box-sizing: border-box;*/
+			flex: 1 1 auto;
 			}
 		.box {
-			/*display: flex;*/
+			display: flex;
 			margin: 0 -30px;
 			overflow:  hidden;
 		}	
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
