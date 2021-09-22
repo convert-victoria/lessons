@@ -1,0 +1,173 @@
+body {
+	font-family: sans-serif;
+	background-color: #F7F5F3;
+}
+
+.primary {
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+}
+
+.primary ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-shrink: 0;
+	/*width: 1920px;*/
+	/*height: 120px;*/
+	/*align-items: center;*/
+	list-style: none;
+}
+
+.primary li {
+	font-size: 18px;
+	/*align-self: center;*/
+}
+
+.primary li + li {
+	padding-left: 30px;
+}
+
+.primary a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 30px 0;
+	/*height: 100px;*/
+	/*text-self: center;*/
+}
+
+.search {
+	appearance: none;
+	border-radius: 100px;
+	height: 50px;
+	width: 350px;
+	padding: 11px 19px 11px 35px;
+	border: none;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+	font-size: 16px;
+	margin-left: 100px;
+}
+
+.icon2, .icon3 {
+	width: 25px;
+	height: 28px;
+	box-sizing: border-box;
+	/*align-self: center;*/
+	/*border: 1px solid lightblue;*/
+	margin-left: auto;
+}
+
+.icon2:before {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-size: 28px;
+}
+
+.icon3:before {
+    content: "\f290";
+    font-family: FontAwesome;
+    font-size: 24px; 
+}
+
+.icon1 {
+	width: 24px;
+	height: 24px;
+	align-self: center;
+	position: absolute;
+	top: 13px;
+	right: 12px;
+	/*border: 1px solid lightblue;*/
+	font-size: 22px;
+}
+
+.icon1:before {
+    content: "\f002";
+    font-family: FontAwesome;
+}
+
+.logo {
+	margin-right: auto;
+	margin-left: -10px;
+}
+
+.s1 {
+	/*align-self: center;*/
+	padding-left: 100px;
+	position: relative;
+}
+
+.breadcrumbs {
+	list-style: none;
+	display: flex;
+	padding: 0;
+
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+	padding: 20px 10px 20px 0;
+	color: black;
+	margin-right: 30px;
+}
+
+.breadcrumbs li {
+	margin-right: auto;
+}
+
+.topnav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	opacity: 70%;
+}
+
+.rec {
+	width: 158px;
+	height: 7px;
+	background: #2D7391;
+	border-radius: 20px;
+	margin-left: 40px;
+}
+
+.free {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.main {
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main h1 {
+	font-size: 55px;
+	font-weight: 500;
+	margin: 70px 0 10px;
+} 
+
+.kind {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	list-style: none;
+}
+
+.kind a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 15px 10px 15px 0;
+	margin-right: 20px;
+}
+
