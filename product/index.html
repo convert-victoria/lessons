@@ -43,14 +43,19 @@
 				</div>
 				<span>13 reviews</span>
 			</div>
-			<ul class="size">
-				<li><a href="#">42</a></li>
-				<li class="active"><a href="#">43</a></li>
-				<li class="sold"><span>44</span></li>
-				<li><a href="#">45</a></li>
-				<li><a href="#">46</a></li>
-			</ul>
-			<p class="mark">In stock</p>
+			<div class="size-stock">
+				<div>
+					<p class="ss-text">Select size:</p>
+					<ul class="size">
+						<li><a href="#">42</a></li>
+						<li class="active"><a href="#">43</a></li>
+						<li class="sold"><span>44</span></li>
+						<li><a href="#">45</a></li>
+						<li><a href="#">46</a></li>
+					</ul>
+				</div>
+				<p class="stock"><img src="imgs/mark.svg" alt=""><span>In stock</span></p>
+			</div>
 			<button class="add">Add to cart</button>
 			<p class="description">Raclette pop-up chia post-ironic tattooed dream catcher slow-carb celiac jean shorts viral deep v adapt ogen. Four dollar toast lyft letterpress banjo chartreuse synth ennui hella pork belly pitchfork. </p>
 			<ul class="conditions">
@@ -58,17 +63,19 @@
 				<li class="mark">Free returns</li>
 				<li class="mark">Ships within 1 business day</li>
 			</ul>
+			<ul class="collapse">
+				<li><a href="#">Product details</a></li>
+				<li class="review">
+					<div class="rating">
+						<div class="empty"></div>
+						<div class="green"></div>
+					</div>
+					<a href="#">Reviews
+					<span>13 reviews</span></a>
+				</li>
+				<li><a href="#">Delivery and returns</a></li>
+			</ul>
 		</div>
-		<ul class="collapse">
-			<li><a href="#">Product details</a></li>
-			<li class="review">
-				<div class="rating">
-					<div class="empty"></div>
-					<div class="green"></div>
-				</div>
-				<a href="#">Reviews</a></li>
-			<li><a href="#">Delivery and returns</a></li>
-		</ul>
 	</article>
 	<section class="other-products">
 		<h2 class="like-heading">You might like</h2>
@@ -189,12 +196,52 @@
 		</ul>
 	</section>
 	<footer>
-		<ul class="bonus">
-			<li class="mark">Free delivery</li>
-			<li class="mark">Free returns</li>
-			<li class="mark">Blazing fast delivery</li>
-			<li class="mark">Ethical products</li>
+		<div class="footer-bonus">
+			<ul class="bonus">
+				<li>Free delivery</li>
+				<li>Free returns</li>
+				<li>Blazing fast delivery</li>
+				<li>Ethical products</li>
+			</ul>
+		</div>
+		<ul class="collapse">
+			<li class="open"><a href="">Customer service</a>
+				<ul>
+					<li class="single-point"><a href="">Contact us</a></li>
+					<li class="single-point"><a href="">FAQ</a></li>
+					<li class="single-point"><a href="">Terms of use</a></li>
+					<li class="single-point"><a href="">Return policy</a></li>
+				</ul>
+			</li>
+			<li><a href="">About Smud</a>
+				<ul>
+					<li class="single-point mob-hide">About us<a href=""></a></li>
+					<li class="single-point mob-hide">History<a href=""></a></li>
+					<li class="single-point mob-hide">Privacy policy<a href=""></a></li>
+					<li class="single-point mob-hide">Social responsibility<a href=""></a></li>
+				</ul>
+			</li>
+			<li><a href="">Follow us</a>
+				<p class="mob-hide">Join the community and follow us in social media!</p>
+				<ul class="social mob-hide">
+					<li><a href=""><img src="imgs/facebook.svg" alt=""></a></li>
+					<li><a href=""><img src="imgs/instagrm.svg" alt=""></a></li>
+					<li><a href=""><img src="imgs/snapchat.svg" alt=""></a></li>
+				</ul>
+			</li>
+			<li><a href="">Newsletter</a>
+				<p class="mob-hide mob-hide">Sign up for the newsletter to get great deals and all the latest news!</p>
+				<div class="form-group">
+					<input type="tel" placeholder="Your e-mail">
+					<input type="button" value="Legg i handlekurv">
+				</div>
+			</li>
 		</ul>
+			<p class="copyright">Copyright 2020 Smud AS. All rights reserved. Magento 2 webshop by Convert. This site uses cookies</p>
+				<ul class="footer-logos">
+					<li><a href=""><img src="imgs/Klarna.svg" alt=""></a></li>
+					<li><a href=""><img src="imgs/Vipps.svg" alt=""></a></li>
+				</ul>
 	</footer>
 </body>
 </html>
