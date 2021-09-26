@@ -654,12 +654,68 @@ footer .footer-logos {
 	footer .social {
 		display: flex;
 	}
+
+	.min-img {
+		display: flex;
+	}
+
+	.min-img li  {
+		position: relative;
+	}
+
+	.min-img .bg {
+		position: absolute;
+	}
+
+	.copyright-elements {
+		display: flex;
+		width: 73%;
+	    margin: 0 auto;
+	    max-width: 1394px;
+	}
+
+	.header-elements .header-ico.hamburger img {
+		display: none;
+	}
+
+	.inner-points {
+		display: flex;
+	}
+
+	.heart {
+		display: none;
+	}
+
+	.header-elements .logo {
+		order: -1;
+	}
+
+	.header-elements .hamburger {
+		order: 0;
+		flex-grow: 1;
+	}
+
+	.header-elements .hamburger li {
+		flex-grow: 1;
+	}
+
+	.header-elements .hamburger li a {
+		white-space: nowrap;
+	}
+
 }
 
-@media (max-width:  1024px) {
+@media (max-width:  1023px) {
 
 	.mob-hide {
 		display: none;
 	}
 
+	.min-img {
+		display: none;
+	}
+
+	.inner-points {
+		display: none;
+	}
 }
