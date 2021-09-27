@@ -15,7 +15,7 @@ img {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, p, a, span, li, button, input {
+h1, h2, h3, h4, h5, p, a, span, li, button, input, div {
 	font-family: 'silkaregular';
 }
 
@@ -40,6 +40,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	padding: 15px 18px 5px;
+	position: relative;
 }
 
 .header-elements .header-ico a {
@@ -63,7 +64,8 @@ header {
 .search-form {
 	width: 93%;
 	margin: 0 auto;
-	position: relative;
+	position: absolute;
+    top: 64px;
 }
 
 .search-form input {
@@ -674,20 +676,33 @@ footer .footer-logos {
 	    max-width: 1394px;
 	}
 
-	.header-elements .header-ico.hamburger img {
+	.header-elements .header-ico.hamburger .ico {
 		display: none;
 	}
 
 	.inner-points {
 		display: flex;
+		justify-content: space-between;
+		flex-shrink: 0;
+		margin: 0 100px 0 50px;
 	}
 
 	.heart {
 		display: none;
 	}
 
+	.header-elements {
+		width: 73%;
+	    margin: 0 auto;
+	    max-width: 1394px;
+	}
+
 	.header-elements .logo {
 		order: -1;
+	}
+
+	.header-elements .logo img {
+		width: 134px;
 	}
 
 	.header-elements .hamburger {
@@ -695,12 +710,120 @@ footer .footer-logos {
 		flex-grow: 1;
 	}
 
-	.header-elements .hamburger li {
+	/*.header-elements .hamburger li {
 		flex-grow: 1;
-	}
+	}*/
 
 	.header-elements .hamburger li a {
 		white-space: nowrap;
+		width: max-content;
+		color:  #000;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.sub-elements {
+		display: flex;
+		width: 73%;
+	    margin: 0 auto;
+	    max-width: 1394px;
+	    justify-content: space-between;
+	    margin-top: 14px;
+	    margin-bottom: 44px;
+	}
+
+	.sub-elements .breadcrumbs {
+		display: flex;
+	}
+
+	.sub-elements .breadcrumbs li + li:before {
+		padding: 0 20px;
+		color: #ccc;
+		content: "/\00a0";
+	}
+
+	.sub-elements .breadcrumbs li a {
+		color: #000;
+		text-decoration: none;
+		font-size: 14px;
+	}
+
+	.sub-elements .balance {
+		display: flex;
+		align-items: center;
+	}
+
+	.sub-elements .balance .progress-bar {
+		width: 158px;
+		height: 7px;
+		position: relative;
+		margin-left: 15px;
+	}
+
+	.sub-elements .balance .progress-bar div:first-child {
+		background-color: #F3F1EF;
+		width: 100%;
+   		height: 7px;
+   		position: absolute;
+   		border-radius: 20px;
+	}
+
+	.sub-elements .balance .progress-bar div:last-child {
+		background-color: #2D7391;
+		width: 80%;
+   		height: 7px;
+   		position: absolute;
+   		border-radius: 20px;
+	}
+
+	.like a img:first-child, .other a img:first-child {
+	    top: auto;
+	    left: auto;
+	    bottom: 20px;
+	    right: 0;
+	}
+
+	.other-products .like li a .stars, .other-products .other li a .stars {
+		margin-left: 19px;
+	}
+
+	.like .small-prod, .other .small-prod {
+		margin: 0 10px;
+	}
+
+	.other-products .like, .other-products .other {
+		margin: 0 -10px;
+	}
+
+	.product-info {
+		position: relative;
+	}
+
+	.product-info .prod-price {
+		position: absolute;
+		top: 80px;
+		right: 0;
+		font-size: 32px;
+	}
+
+	.search-form {
+		position: relative;
+		top:  0;
+		max-width: 347px;
+		margin-right: 45px;
+	}
+
+	header {
+    	height: 120px;
+	}
+
+	.header-elements {
+		padding: 0;
+		padding-top: 40px;
+	}
+
+	.header-elements .header-ico a img {
+		width: 31px;
 	}
 
 }
@@ -716,6 +839,18 @@ footer .footer-logos {
 	}
 
 	.inner-points {
+		display: none;
+	}
+
+	.sub-elements {
+		display: none;
+	}
+
+	.other-products .like li a .stars, .other-products .other li a .stars {
+		display: none;
+	}
+
+	.product-info .prod-price {
 		display: none;
 	}
 }
